@@ -31,4 +31,9 @@ public class UserController {
         User user = userRepository.findByUserName(userName);
         return user;
     }
+
+    @RequestMapping("/test")
+    public String myTest() {
+        return "神光护体，请求接口！";
+    }
 }
