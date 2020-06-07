@@ -32,8 +32,13 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping("/test")
+    @RequestMapping("/test1")
     public String myTest() {
         return "神光护体，请求接口！";
+    }
+
+    @RequestMapping("/test2")
+    public String youTest() {
+        return "触发测试，请求接口！";
     }
 }
