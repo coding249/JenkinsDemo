@@ -33,7 +33,13 @@ public class UserController {
 
     @GetMapping("/test")
     public String myTest() {
-        String text = "神光护体，永无bug！";
+        String text = "神光护体";
+        return text;
+    }
+
+    @GetMapping("/test2")
+    public String Test() {
+        String text = "永无bug！";
         return text;
     }
 
