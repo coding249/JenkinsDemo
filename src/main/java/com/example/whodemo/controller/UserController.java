@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.whodemo.dao.UserDao;
 import com.example.whodemo.entity.User;
@@ -32,13 +31,10 @@ public class UserController {
         return user;
     }
 
-    @RequestMapping("/test1")
+    @GetMapping("/test")
     public String myTest() {
-        return "神光护体，请求接口！";
+        String text = "神光护体！";
+        return text;
     }
 
-    @RequestMapping("/test2")
-    public String youTest() {
-        return "触发测试，请求接口！";
-    }
 }
